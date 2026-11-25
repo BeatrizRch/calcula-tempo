@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CalculaTempo - Calculadora de tempo entre datas.">
+    <title>CalculaTempo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="container">
+        <header>
+            <h1>⏱ CalculaTempo</h1>
+            <p>Descubra quanto tempo existe entre duas datas.</p>
+        </header>
+
+        <section class="calculator">
+            <label for="inicio">Data e hora inicial</label>
+            <input type="datetime-local" id="inicio">
+
+            <label for="fim">Data e hora final</label>
+            <input type="datetime-local" id="fim">
+
+            <button onclick="calcularTempo()">
+                Calcular tempo
+            </button>
+
+            <button class="secondary" onclick="limpar()">
+                Limpar
+            </button>
+
+            <div id="resultado" class="resultado">
+                <h2>Resultado</h2>
+                <p>Informe as datas para começar.</p>
+            </div>
+        </section>
+
+        <footer>
+            <p>CalculaTempo © 2026</p>
+            <p>Desenvolvido com HTML, CSS e JavaScript</p>
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
